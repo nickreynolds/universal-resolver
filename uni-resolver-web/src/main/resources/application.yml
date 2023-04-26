@@ -79,6 +79,10 @@ uniresolver:
       testIdentifiers:
         - did:ens:vitalik.eth
         - did:ens:goerli:whatever.eth
+    - pattern: "^(did:peer:.+)$"
+      url: http://uni-resolver-driver-did-uport:8081/
+      testIdentifiers:
+        - did:peer:2.Ez6LSpSrLxbAhg2SHwKk7kwpsH7DM7QjFS5iK6qP87eViohud.Vz6MkqRYqQiSgvZQdnBytw86Qbs2ZWUkGv22od935YF4s8M7V.SeyJ0IjoiZG0iLCJzIjoiaHR0cHM6Ly9leGFtcGxlLmNvbS9lbmRwb2ludDEiLCJyIjpbImRpZDpleGFtcGxlOnNvbWVtZWRpYXRvciNzb21la2V5MSJdLCJhIjpbImRpZGNvbW0vdjIiLCJkaWRjb21tL2FpcDI7ZW52PXJmYzU4NyJdfQ
     - pattern: "^(did:eosio:.+)$"
       url: http://eosio-driver:8080/
       testIdentifiers:
@@ -109,10 +113,6 @@ uniresolver:
       testIdentifiers:
         - did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw
         - did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd
-    - pattern: "^(did:work:.+)$"
-      url: http://work-did-driver:8080/
-      testIdentifiers:
-        - did:work:2UUHQCd4psvkPLZGnWY33L
     - pattern: "^(did:ont:.+)$"
       url: http://ontid-driver:8080/
       testIdentifiers:
